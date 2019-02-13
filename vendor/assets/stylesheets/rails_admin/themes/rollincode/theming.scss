@@ -324,7 +324,7 @@ h1 {
 
 .table-striped td:not(.image_field) a {
   text-decoration: none !important;
-  padding: 8px 10px;
+  padding: 4px 6px;
   border-radius: 2px;
   color: $secondary;
 
@@ -524,4 +524,28 @@ td.carrierwave_type .img-thumbnail {
 
 .modal-header-title {
   margin-top: 0;
+}
+
+td {
+  &.admin_field {
+    &.boolean_type {
+      text-align: center;
+
+      .label {
+        padding: .25em .45em;
+
+        font-size: 100%
+      }
+    }
+  }
+
+  &.last {
+    &.links {
+      .list-inline {
+        li {
+          padding: 0;
+        }
+      }
+    }
+  }
 }
